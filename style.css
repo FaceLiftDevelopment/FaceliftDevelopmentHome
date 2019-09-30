@@ -14,6 +14,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-family: 'Be Vietnam', sans-serif;
 }
 
 .navbar{
@@ -72,27 +73,10 @@ p {
   text-shadow: 0 3px 3px #4681c0;
 }
 
+
 #title {
   background-image: url("assets/colorado-mountains.jpg");
   z-index:2;
-}
-
-#title button {
-  transform: translateZ(.15px) scale(.75);
-  transform-origin: 50% 100%;
-  width: 25%;
-  background: white;
-  color: #003366;
-  font-weight: 700;
-  box-shadow: 0 1px 1px #4681c0;
-}
-
-#title button:hover {
-  width: 25%;
-  background: rgba(46, 51, 63, 0.616);
-  color: #ffffff;
-  font-weight: 700;
-  box-shadow: 0 2px 2px rgba(171, 196, 196, 0.836);
 }
 
 #title h1 {
@@ -158,6 +142,10 @@ padding-bottom: 6rem;
 #slide1 p{
   font-size: 18px;
   text-align: center;
+}
+
+#slide1 #card1:hover .fas {
+  color: #4681c0;
 }
 
 #slide1 p b{
@@ -261,12 +249,53 @@ margin-bottom: 5px;
   text-shadow: none;
   text-align: left;
   font-size: 19px;
+  padding-bottom: 3rem;
 }
 
 #slide4 h1 {
   font-size: 175%;
+  font-weight: 700;
 }
 
-#slide4 i{
 
+#contact-button{
+  font-family: 'Be Vietnam', sans-serif;
+  display: block;
+  width: 25%;
+  background: #4681c0;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 1px 1px #4681c0;
+}
+
+#contact-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#contact-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#contact-button:hover span {
+  padding-right: 25px;
+}
+
+#contact-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#slide4 hr{
+  width: 20%;
+  height: 2px;
+  background-color:  #4681c0;
+  margin-left: 0;
 }
