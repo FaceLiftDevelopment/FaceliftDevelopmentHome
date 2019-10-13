@@ -1,27 +1,65 @@
  @import url(https://fonts.googleapis.com/css?family=Red+Hat+Display);
  @import url(https://fonts.googleapis.com/css?family=Be+Vietnam);
 
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
 body { 
   margin:0;
   padding:0;
-	perspective: 1px;
-	transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  height: 100vh;
   font-family: 'Be Vietnam', sans-serif;
 }
 
-.navbar{
-  z-index: 9999;
+.navbar-custom{
+  background-color: #224a75;
+  color: white;
+  z-index: 999;
   position: fixed;
   width: 100%;
   top: 0;
+}
+
+.navbar-custom a{
+ margin-right: 3px;
+}
+
+.nav-right a{
+  margin-right: 1rem;
+}
+
+#aboutNAV{
+  color: rgba(197, 197, 197, 0.80);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #4681c0;
+}
+
+#aboutNAV:hover{
+  color: white;
+  cursor: pointer;
+}
+
+
+#contactNAV{
+  color: rgba(197, 197, 197, 0.80);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #4681c0;
+}
+
+#contactNAV:hover{
+  color: white;
+  cursor: pointer;
+}
+
+#teamNAV{
+  color: rgba(197, 197, 197, 0.80);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #4681c0;
+}
+
+#teamNAV:hover{
+  color: white;
+  cursor: pointer;
 }
 
 h1 {
@@ -69,18 +107,18 @@ p {
   text-align: center;
   font-size: 175%;
   color: #fff;
-  text-shadow: 0 3px 3px #4681c0;
+  text-shadow: 0 3px 3px #000000;
 }
 
 
 #title {
   background-image: url("assets/colorado-mountains.jpg");
   z-index:2;
+  height: 100vh;
 }
 
 #title h1 {
- transform: translateZ(.4px) scale(.75);
- transform-origin: 50% 100%;
+  font-size: 330%;
  font-weight: 700;
  font-family: 'Red Hat Display', sans-serif;
 }
@@ -138,7 +176,8 @@ padding-bottom: 6rem;
 }
 
 #slogan {
-padding: 2rem;
+  padding: 2rem;
+height: 100px;
 background-color: #4681c0;
 }
 
