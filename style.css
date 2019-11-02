@@ -216,10 +216,18 @@ background-color: #D8C3A5;
 }
 
 
-#slide1 p b{
-  font-size: 20px;
+#slide1 b{
   text-decoration: underline;
   text-decoration-color: #E85a4f;
+}
+
+#slide1 .quote-button{
+  text-align:center;
+}
+
+#slide1 #quote-button{
+  background-color: #E85a4f;
+  color: white;
 }
 
 #slide1 i{
@@ -243,6 +251,10 @@ background-color: #D8C3A5;
   z-index:2;
   padding-top: 2rem;
   padding-bottom: 3rem;
+}
+
+#slide2 #profile-pic2{
+  display: none;
 }
 
 #slide2 #slide2-title hr{
@@ -406,4 +418,52 @@ border-radius: 15px;
 
 .modal #submit-message{
   background: #E85a4f;
+}
+
+@media screen and (max-width: 675px) {
+  #title h1{
+    font-size: 200%;
+  }
+  #title #typist{
+    font-size: 60%;
+   }
+   #title #down-arrow  {
+    color: rgb(255, 255, 255);
+    }
+   #slogan{
+     height: auto;
+   }
+   #contact-button{
+    width: 50%;
+   }
+   #slide2 #profile-pic2{
+    display: block;
+  }
+  #slide2 #profile-pic1{
+    display: none;
+  }
+  #slide4 i{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #navbar{
+    display: none;
+  }
+  #contact-button{
+    width: 50%;
+   }
+}
+
+@media screen and (max-width: 440px) {
+  #title h1{
+    font-size: 150%;
+  }
+  #title #typist{
+    font-size: 60%;
+   }
+   #contact-button{
+    width: 50%;
+   }
 }

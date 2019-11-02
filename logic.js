@@ -1,5 +1,6 @@
 var height = 0;
 var width = 0;
+var navoffset = 0;
 
 var name = "";
 var email = "";
@@ -16,6 +17,9 @@ $(document).ready(function () {
   // Hide navbar
   $("#navbar").hide();
 
+  if (width > 600) {
+    navoffset = 50;
+  }
   // Add smooth scrolling to all links
   $("a").on('click', function (event) {
 
@@ -31,11 +35,11 @@ $(document).ready(function () {
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top - 50
+        scrollTop: $(hash).offset().top - navoffset
       }, 800, function () {
 
         // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash - 50;
+        window.location.hash = hash - navoffset;
       });
     } // End if
   });
@@ -43,7 +47,7 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-  if ($(this).scrollTop() > height - 100) {
+  if ($(this).scrollTop() > height - 100 && (width > 500)) {
     $("#navbar").fadeIn();
   } else {
     $("#navbar").fadeOut();
