@@ -14,8 +14,6 @@ $(document).ready(function () {
   width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
   height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   console.log(height);
-  // Hide navbar
-  $("#navbar").hide();
 
   if (width > 600) {
     navoffset = 50;
@@ -44,14 +42,6 @@ $(document).ready(function () {
     } // End if
   });
 
-});
-
-$(window).scroll(function () {
-  if ($(this).scrollTop() > height - 100 && (width > 500)) {
-    $("#navbar").fadeIn();
-  } else {
-    $("#navbar").fadeOut();
-  }
 });
 
 $("#submit-message").click(function() {

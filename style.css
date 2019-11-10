@@ -73,6 +73,7 @@ p {
   background-attachment: fixed;
   background-size: cover;
   padding-top: 15vh;
+  /* background by SVGBackgrounds.com */
 }
 
 #title h1 {
@@ -168,8 +169,9 @@ text-shadow: none;
 }
 
  #slide1 { 
+   background: rgba(128, 128, 128, 0.137);
 padding-top: 2rem;
-padding-bottom: 6rem;
+padding-bottom: 0px;
  }
 
 #slide1 #slide1-image1{
@@ -230,7 +232,15 @@ background-color: #D8C3A5;
   color: white;
 }
 
-#slide1 i{
+#why-fl {
+  background:white;
+  padding-top: 3rem;
+  padding-bottom: 0px;
+  min-height: auto;
+  text-align: center;
+}
+
+#why-fl i{
   color: #8E8D8A;
 }
 
